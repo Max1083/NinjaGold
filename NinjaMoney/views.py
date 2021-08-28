@@ -10,7 +10,7 @@ def process_money(request):
     if "farm" in request.POST: #pregunta si el objeto viene en el request del formulario en su metodo POST
         ranfarm = randint(10,20) #valor aleatorio entre 10 y 20
         request.session['gold_cant'] += ranfarm
-    if "cove" in request.POST:
+    if "cave" in request.POST:
         rancave = randint(5,10) 
         request.session['gold_cant'] += rancave
     if "house" in request.POST:
